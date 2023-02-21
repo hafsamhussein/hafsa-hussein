@@ -1,15 +1,81 @@
 body {
-  background-color: #444444;
-  color: #dddddd;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10% 20%;
+  background-color: lightblue;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.exp-header {
-   text-align: center;
-  text-transform: uppercase;
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
-    background-color: rgba(0,0,0, 0.1)
-    
+img {
+  width: 200px;
+  height: 230;
+  display: block;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: blue;
+  text-align: left;
+  text-shadow: 1px 1px yellow;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+  }
+.card {
+  background-color: white;
+  border: 1px solid blue;
+  box-shadow: 5px 5px 10px #888888;
+  width: 80%;
+  height: 50%;
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+  border-radius: 25px;
+}
+
+ol {
+  list-style-type: none;
+  text-align: left;
+}
+
+ol li::before {
+  content: "\2605";
+  color: blue;
+  margin-right: 10px;
+}
+
+.sub-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sub-section h4 {
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.sub-section p {
+  margin-bottom: 10px;
+}
+
+.sub-section ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  list-style-type: disc;
 }
